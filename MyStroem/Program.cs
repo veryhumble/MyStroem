@@ -15,10 +15,9 @@ namespace MyStroem
             var configuration = Configuration.ReadFromEnv();
 
             AppDomain.CurrentDomain.ProcessExit += ProcessExit;
-
             var crawler = new Crawler(new Client(), new InfluxDb(configuration));
 
-            while (CancellationTokenSource.IsCancellationRequested)
+            while (!CancellationTokenSource.IsCancellationRequested)
             {
                 await Task.Delay(TimeSpan.FromSeconds(configuration.IntervalSeconds), CancellationTokenSource.Token);
                 var result = await crawler.Run(configuration.DeviceList);
