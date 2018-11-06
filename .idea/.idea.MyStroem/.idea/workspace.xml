@@ -30,18 +30,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyStroem/InfluxDb.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="25" column="59" lean-forward="true" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+            <state relative-caret-position="375">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
               <folding>
-                <marker date="1541524717463" expanded="false" signature="6:146" ph="..." />
-                <marker date="1541524717463" expanded="true" signature="166:1924" ph="{...}" />
-                <marker date="1541524717463" expanded="true" signature="194:1104" ph="{...}" />
-                <marker date="1541524717463" expanded="true" signature="309:373" ph="{...}" />
-                <marker date="1541524717463" expanded="true" signature="427:1098" ph="{...}" />
-                <marker date="1541524717463" expanded="true" signature="492:817" ph="{...}" />
-                <marker date="1541524717463" expanded="true" signature="564:803" ph="{...}" />
-                <marker date="1541524717463" expanded="true" signature="1148:1922" ph="{...}" />
-                <marker date="1541524717463" expanded="true" signature="1242:1916" ph="{...}" />
+                <marker date="1541531976220" expanded="false" signature="6:146" ph="..." />
+                <marker date="1541531976220" expanded="true" signature="166:1933" ph="{...}" />
+                <marker date="1541531976220" expanded="true" signature="194:1107" ph="{...}" />
+                <marker date="1541531976220" expanded="true" signature="309:373" ph="{...}" />
+                <marker date="1541531976220" expanded="true" signature="427:1101" ph="{...}" />
+                <marker date="1541531976220" expanded="true" signature="492:817" ph="{...}" />
+                <marker date="1541531976220" expanded="true" signature="564:803" ph="{...}" />
+                <marker date="1541531976220" expanded="true" signature="1151:1931" ph="{...}" />
+                <marker date="1541531976220" expanded="true" signature="1248:1925" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -77,8 +77,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MyStroem/Configuration.cs" />
         <option value="$PROJECT_DIR$/MyStroem/Program.cs" />
+        <option value="$PROJECT_DIR$/MyStroem/InfluxDb.cs" />
+        <option value="$PROJECT_DIR$/MyStroem/Configuration.cs" />
       </list>
     </option>
   </component>
@@ -164,12 +165,12 @@
       <option name="presentableId" value="Default" />
       <updated>1541525159982</updated>
       <workItem from="1541525161100" duration="956000" />
-      <workItem from="1541530574587" duration="1106000" />
+      <workItem from="1541530574587" duration="1346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2062000" />
+    <option name="totallyTimeSpent" value="2302000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -249,23 +250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyStroem/Configuration.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <marker date="1541531130785" expanded="false" signature="6:47" ph="..." />
-            <marker date="1541531130785" expanded="true" signature="67:1757" ph="{...}" />
-            <marker date="1541531130785" expanded="true" signature="100:1755" ph="{...}" />
-            <marker date="1541531130785" expanded="true" signature="489:1186" ph="{...}" />
-            <marker date="1541531130785" expanded="true" signature="555:1147" ph="{...}" />
-            <marker date="1541531130785" expanded="true" signature="1269:1749" ph="{...}" />
-            <marker date="1541531130785" expanded="true" signature="1424:1713" ph="{...}" />
-            <marker date="1541531130785" expanded="true" signature="1556:1657" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyStroem/Crawler.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -298,20 +282,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MyStroem/Configuration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+          <folding>
+            <marker date="1541532003994" expanded="false" signature="6:47" ph="..." />
+            <marker date="1541532003994" expanded="true" signature="67:1920" ph="{...}" />
+            <marker date="1541532003994" expanded="true" signature="100:1918" ph="{...}" />
+            <marker date="1541532003994" expanded="true" signature="554:1349" ph="{...}" />
+            <marker date="1541532003994" expanded="true" signature="620:1310" ph="{...}" />
+            <marker date="1541532003994" expanded="true" signature="1432:1912" ph="{...}" />
+            <marker date="1541532003994" expanded="true" signature="1587:1876" ph="{...}" />
+            <marker date="1541532003994" expanded="true" signature="1719:1820" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MyStroem/InfluxDb.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="59" lean-forward="true" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+        <state relative-caret-position="375">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
           <folding>
-            <marker date="1541524717463" expanded="false" signature="6:146" ph="..." />
-            <marker date="1541524717463" expanded="true" signature="166:1924" ph="{...}" />
-            <marker date="1541524717463" expanded="true" signature="194:1104" ph="{...}" />
-            <marker date="1541524717463" expanded="true" signature="309:373" ph="{...}" />
-            <marker date="1541524717463" expanded="true" signature="427:1098" ph="{...}" />
-            <marker date="1541524717463" expanded="true" signature="492:817" ph="{...}" />
-            <marker date="1541524717463" expanded="true" signature="564:803" ph="{...}" />
-            <marker date="1541524717463" expanded="true" signature="1148:1922" ph="{...}" />
-            <marker date="1541524717463" expanded="true" signature="1242:1916" ph="{...}" />
+            <marker date="1541531976220" expanded="false" signature="6:146" ph="..." />
+            <marker date="1541531976220" expanded="true" signature="166:1933" ph="{...}" />
+            <marker date="1541531976220" expanded="true" signature="194:1107" ph="{...}" />
+            <marker date="1541531976220" expanded="true" signature="309:373" ph="{...}" />
+            <marker date="1541531976220" expanded="true" signature="427:1101" ph="{...}" />
+            <marker date="1541531976220" expanded="true" signature="492:817" ph="{...}" />
+            <marker date="1541531976220" expanded="true" signature="564:803" ph="{...}" />
+            <marker date="1541531976220" expanded="true" signature="1151:1931" ph="{...}" />
+            <marker date="1541531976220" expanded="true" signature="1248:1925" ph="{...}" />
           </folding>
         </state>
       </provider>

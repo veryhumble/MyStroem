@@ -22,4 +22,4 @@ WORKDIR /app
 
 COPY --from=build ./app/MyStroem/out/ .
 
-ENTRYPOINT ["./MyStroem"]
+CMD ["./MyStroem"]
