@@ -31,16 +31,16 @@ namespace MyStroem
 
             var uri = new Uri(_configuration.InfluxDbAddress + "/write");
             Console.WriteLine($"sending metric to InfluxDB for {deviceReport.Name}");
-            webClient.UploadString(uri, deviceReport.ToLineProtocolString(_configuration.InfluxDbDatabase));
+            webClient.UploadString(uri, deviceReport.ToLineProtocolString(_configuration.InfluxDbMeasurement));
         }
     }
 
     public static class InfluxDbExtensions
     {
-        public static string ToLineProtocolString(this MyStrom device, string database)
+        public static string ToLineProtocolString(this MyStrom device, string measurement)
         {
             var stringBuilder = new StringBuilder();
-            stringBuilder.Append(database);
+            stringBuilder.Append(measurement);
             stringBuilder.Append(",");
             stringBuilder.Append($"{nameof(device.Name).ToLowerInvariant()}={device.Name} ");
             stringBuilder.Append($"{nameof(device.Report.Power).ToLowerInvariant()}={device.Report.Power.ToString("0.000000", CultureInfo.InvariantCulture)},");

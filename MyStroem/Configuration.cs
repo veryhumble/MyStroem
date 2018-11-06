@@ -10,6 +10,8 @@ namespace MyStroem
         public string InfluxDbAddress { get; set; }
 
         public string InfluxDbDatabase { get; set; }
+        
+        public string InfluxDbMeasurement { get; set; }
 
         public string InfluxDbUsername { get; set; }
 
@@ -25,6 +27,7 @@ namespace MyStroem
                 IntervalSeconds = Convert.ToInt32(Environment.GetEnvironmentVariable("INTERVAL_SECONDS")),
                 InfluxDbAddress = Environment.GetEnvironmentVariable("INFLUXDB_ADDRESS"),
                 InfluxDbDatabase = Environment.GetEnvironmentVariable("INFLUXDB_DATABASE"),
+                InfluxDbMeasurement = Environment.GetEnvironmentVariable("INFLUXDB_MEASUREMENT"),
                 InfluxDbUsername = Environment.GetEnvironmentVariable("INFLUXDB_USERNAME"),
                 InfluxDbPassword = Environment.GetEnvironmentVariable("INFLUXDB_PASSWORD")
             };
