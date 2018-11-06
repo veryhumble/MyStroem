@@ -1,0 +1,23 @@
+
+ 
+sudo: 'required'
+
+services:
+  - 'docker'
+
+# first execute the test suite.
+# after the test execution is done and didn't
+# fail, build the images (if this step fails
+# the whole Travis build is considered a failure).
+script:
+  - docker build -t $(IMAGE) .
+
+after_success:
+  - if [[ "$TRAVIS_BRANCH" == "master" ]]; then
+      docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD ;
+      docker push $(IMAGE)
+    fi
+
+# don't notify me when things fail
+notifications:
+  email: false
