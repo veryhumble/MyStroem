@@ -22,6 +22,4 @@ WORKDIR /app
 
 COPY --from=build ./app/MyStroem/out/ .
 
-RUN ls -alh
-
 ENTRYPOINT ["./MyStroem"]
