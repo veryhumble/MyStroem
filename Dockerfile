@@ -2,7 +2,7 @@
 ############################################################
 # Build Container
 ############################################################
-FROM microsoft/dotnet:2.1-sdk-stretch-arm32v7 AS build
+FROM microsoft/dotnet:2.1-sdk AS build
 LABEL maintainer="fivenine GmbH"
 
 WORKDIR /app
