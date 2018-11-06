@@ -15,7 +15,7 @@ RUN dotnet publish -r linux-arm -c Release -o out
 # Application Container
 ############################################################
 
-FROM microsoft/dotnet:2.1-runtime
+FROM microsoft/dotnet:2.1.5-runtime-stretch-slim-arm32v7
 LABEL maintainer="fivenine GmbH"
 
 WORKDIR /app
