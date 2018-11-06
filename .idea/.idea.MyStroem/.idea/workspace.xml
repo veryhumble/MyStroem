@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84370c62-1c16-4e63-8aab-a8bdbdd44ee4" name="Default Changelist" comment="" />
+    <list default="true" id="84370c62-1c16-4e63-8aab-a8bdbdd44ee4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyStroem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyStroem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyStroem/Configuration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyStroem/Configuration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyStroem/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyStroem/Program.cs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,7 +13,39 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MyStroem/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="10" column="67" lean-forward="true" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+              <folding>
+                <marker date="1541531168408" expanded="false" signature="6:130" ph="..." />
+                <marker date="1541531168408" expanded="true" signature="150:1070" ph="{...}" />
+                <marker date="1541531168408" expanded="true" signature="170:1068" ph="{...}" />
+                <marker date="1541531168408" expanded="true" signature="336:927" ph="{...}" />
+                <marker date="1541531168408" expanded="true" signature="624:906" ph="{...}" />
+                <marker date="1541531168408" expanded="true" signature="996:1062" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyStroem/MyStrom.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding>
+                <marker date="1541434460152" expanded="true" signature="33:415" ph="{...}" />
+                <marker date="1541434460152" expanded="true" signature="60:292" ph="{...}" />
+                <marker date="1541434460152" expanded="true" signature="318:413" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,8 +58,16 @@
     <setting file="file://$PROJECT_DIR$/MyStroem/WebClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MyStroem/Crawler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="70" />
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MyStroem/Configuration.cs" />
+        <option value="$PROJECT_DIR$/MyStroem/Program.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
     <option name="width" value="1936" />
     <option name="height" value="1241" />
   </component>
@@ -103,12 +147,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541525159982</updated>
-      <workItem from="1541525161100" duration="309000" />
+      <workItem from="1541525161100" duration="956000" />
+      <workItem from="1541530574587" duration="503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309000" />
+    <option name="totallyTimeSpent" value="1459000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -120,18 +165,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="70" width="1936" height="1241" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="980" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973601" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" />
-      <window_info anchor="bottom" id="Docker" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -139,11 +177,18 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,23 +205,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MyStroem/Configuration.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <marker date="1541524479096" expanded="false" signature="6:47" ph="..." />
-            <marker date="1541524479096" expanded="true" signature="67:1594" ph="{...}" />
-            <marker date="1541524479096" expanded="true" signature="100:1592" ph="{...}" />
-            <marker date="1541524479096" expanded="true" signature="433:1023" ph="{...}" />
-            <marker date="1541524479096" expanded="true" signature="499:984" ph="{...}" />
-            <marker date="1541524479096" expanded="true" signature="1106:1586" ph="{...}" />
-            <marker date="1541524479096" expanded="true" signature="1261:1550" ph="{...}" />
-            <marker date="1541524479096" expanded="true" signature="1393:1494" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyStroem/Crawler.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -212,6 +240,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MyStroem/WebClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <marker date="1541524673736" expanded="false" signature="6:145" ph="..." />
+            <marker date="1541524673736" expanded="true" signature="165:1090" ph="{...}" />
+            <marker date="1541524673736" expanded="true" signature="191:1088" ph="{...}" />
+            <marker date="1541524673736" expanded="true" signature="258:1082" ph="{...}" />
+            <marker date="1541524673736" expanded="true" signature="676:822" ph="{...}" />
+            <marker date="1541524673736" expanded="true" signature="988:1071" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MyStroem/MyStrom.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -224,30 +267,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyStroem/Program.cs">
+    <entry file="file://$PROJECT_DIR$/MyStroem/Configuration.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        <state relative-caret-position="315">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding>
-            <marker date="1541524889246" expanded="false" signature="6:77" ph="..." />
-            <marker date="1541524889246" expanded="true" signature="97:501" ph="{...}" />
-            <marker date="1541524889246" expanded="true" signature="117:499" ph="{...}" />
-            <marker date="1541524889246" expanded="true" signature="169:493" ph="{...}" />
+            <marker date="1541531130785" expanded="false" signature="6:47" ph="..." />
+            <marker date="1541531130785" expanded="true" signature="67:1757" ph="{...}" />
+            <marker date="1541531130785" expanded="true" signature="100:1755" ph="{...}" />
+            <marker date="1541531130785" expanded="true" signature="489:1186" ph="{...}" />
+            <marker date="1541531130785" expanded="true" signature="555:1147" ph="{...}" />
+            <marker date="1541531130785" expanded="true" signature="1269:1749" ph="{...}" />
+            <marker date="1541531130785" expanded="true" signature="1424:1713" ph="{...}" />
+            <marker date="1541531130785" expanded="true" signature="1556:1657" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyStroem/WebClient.cs">
+    <entry file="file://$PROJECT_DIR$/MyStroem/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="90">
+          <caret line="10" column="67" lean-forward="true" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
           <folding>
-            <marker date="1541524673736" expanded="false" signature="6:145" ph="..." />
-            <marker date="1541524673736" expanded="true" signature="165:1090" ph="{...}" />
-            <marker date="1541524673736" expanded="true" signature="191:1088" ph="{...}" />
-            <marker date="1541524673736" expanded="true" signature="258:1082" ph="{...}" />
-            <marker date="1541524673736" expanded="true" signature="676:822" ph="{...}" />
-            <marker date="1541524673736" expanded="true" signature="988:1071" ph="{...}" />
+            <marker date="1541531168408" expanded="false" signature="6:130" ph="..." />
+            <marker date="1541531168408" expanded="true" signature="150:1070" ph="{...}" />
+            <marker date="1541531168408" expanded="true" signature="170:1068" ph="{...}" />
+            <marker date="1541531168408" expanded="true" signature="336:927" ph="{...}" />
+            <marker date="1541531168408" expanded="true" signature="624:906" ph="{...}" />
+            <marker date="1541531168408" expanded="true" signature="996:1062" ph="{...}" />
           </folding>
         </state>
       </provider>

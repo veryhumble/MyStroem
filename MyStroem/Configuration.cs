@@ -15,11 +15,14 @@ namespace MyStroem
 
         public string InfluxDbPassword { get; set; }
 
+        public int IntervalSeconds { get; set; } = 60;
+
         public static Configuration ReadFromEnv()
         {
             var config = new Configuration
             {
                 DeviceList = ParseDevicesFromEnv(Environment.GetEnvironmentVariable("MYSTROM_DEVICES")),
+                IntervalSeconds = Convert.ToInt32(Environment.GetEnvironmentVariable("INTERVAL_SECONDS")),
                 InfluxDbAddress = Environment.GetEnvironmentVariable("INFLUXDB_ADDRESS"),
                 InfluxDbDatabase = Environment.GetEnvironmentVariable("INFLUXDB_DATABASE"),
                 InfluxDbUsername = Environment.GetEnvironmentVariable("INFLUXDB_USERNAME"),
