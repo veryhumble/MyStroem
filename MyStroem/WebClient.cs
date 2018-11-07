@@ -9,9 +9,9 @@ namespace MyStroem
 {
     public class Client
     {
-        public async Task<MyStrom> GetReport(MyStrom device)
+        public static async Task<MyStrom> GetReport(MyStrom device)
         {
-            Console.WriteLine($"getting report of {device.Name} on {device.Address}");
+            Console.WriteLine($"[{DateTime.UtcNow}] GET report of {device.Name} on {device.Address}");
             var client = new HttpClient();
             var response = await client.GetAsync(device.ReportUrl);
             response.EnsureSuccessStatusCode();

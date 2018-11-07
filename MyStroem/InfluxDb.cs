@@ -16,7 +16,7 @@ namespace MyStroem
             _configuration = configuration;
         }
 
-        public void SendMetric(MyStrom deviceReport)
+        public void SendMetric(MyStrom deviceReport, DateTime timeStamp)
         {
             var webClient = new WebClient
             {
@@ -30,14 +30,15 @@ namespace MyStroem
             };
 
             var uri = new Uri(_configuration.InfluxDbAddress + "/write");
-            Console.WriteLine($"sending metric to InfluxDB for {deviceReport.Name}");
-            webClient.UploadString(uri, deviceReport.ToLineProtocolString(_configuration.InfluxDbMeasurement));
+            Console.WriteLine($"[{DateTime.UtcNow}] sending metric to InfluxDB for {deviceReport.Name}");
+            webClient.UploadStringAsync(uri, deviceReport.ToLineProtocolString(_configuration.InfluxDbMeasurement,
+                new DateTimeOffset(timeStamp).ToUnixTimeSeconds()));
         }
     }
 
     public static class InfluxDbExtensions
     {
-        public static string ToLineProtocolString(this MyStrom device, string measurement)
+        public static string ToLineProtocolString(this MyStrom device, string measurement, long unixTimeSeconds)
         {
             var stringBuilder = new StringBuilder();
             stringBuilder.Append(measurement);
@@ -45,7 +46,7 @@ namespace MyStroem
             stringBuilder.Append($"{nameof(device.Name).ToLowerInvariant()}={device.Name} ");
             stringBuilder.Append($"{nameof(device.Report.Power).ToLowerInvariant()}={device.Report.Power.ToString("0.000000", CultureInfo.InvariantCulture)},");
             stringBuilder.Append($"{nameof(device.Report.Relay).ToLowerInvariant()}={device.Report.Relay.ToString().ToLowerInvariant()} ");
-            stringBuilder.Append(DateTimeOffset.UtcNow.ToUnixTimeSeconds());
+            stringBuilder.Append(unixTimeSeconds);
 
             return stringBuilder.ToString();
         }

@@ -25,8 +25,8 @@ namespace MyStroem
             {
                 ResetEvent.WaitOne();
 
-                var result = await crawler.Run(configuration.DeviceList).ConfigureAwait(false);
-                Console.WriteLine(result ? "Crawling was successful!" : "Crawling failed!");
+                var result = await crawler.Run(configuration.DeviceList, DateTime.UtcNow).ConfigureAwait(false);
+                Console.WriteLine(result ? $"[{DateTime.UtcNow}] Crawling was successful!" : $"[{DateTime.UtcNow}] Crawling failed!");
             }
 
             timer.Dispose();

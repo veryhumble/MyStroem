@@ -15,12 +15,12 @@ namespace MyStroem
             _influxDb = influxDb;
         }
 
-        public async Task<bool> Run(IEnumerable<MyStrom> devices)
+        public async Task<bool> Run(IEnumerable<MyStrom> devices, DateTime timeStamp)
         {
             var reportTasksList = new List<Task<MyStrom>>();
             foreach (var device in devices)
             {
-                reportTasksList.Add(_client.GetReport(device));
+                reportTasksList.Add(Client.GetReport(device));
             }
 
             await Task.WhenAll(reportTasksList);
@@ -29,11 +29,11 @@ namespace MyStroem
             {
                 if (task.Exception != null)
                 {
-                    Console.WriteLine("An error occured" + task.Exception);
+                    Console.WriteLine($"[{DateTime.UtcNow}] An error occured" + task.Exception);
                     return false;
                 }
                 var result = task.Result;
-                _influxDb.SendMetric(result);
+                _influxDb.SendMetric(result, timeStamp);
             }
 
             return true;
