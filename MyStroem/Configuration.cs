@@ -18,6 +18,8 @@ namespace MyStroem
         public string InfluxDbPassword { get; set; }
 
         public int IntervalSeconds { get; set; } = 60;
+        
+        public TimeSpan Interval => TimeSpan.FromSeconds(IntervalSeconds);
 
         public static Configuration ReadFromEnv()
         {

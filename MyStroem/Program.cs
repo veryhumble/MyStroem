@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -9,6 +10,7 @@ namespace MyStroem
     class Program
     {
         private static readonly CancellationTokenSource CancellationTokenSource = new CancellationTokenSource();
+        private static readonly AutoResetEvent ResetEvent = new AutoResetEvent(false);
 
         static async Task Main(string[] args)
         {
@@ -17,12 +19,22 @@ namespace MyStroem
             AppDomain.CurrentDomain.ProcessExit += ProcessExit;
             var crawler = new Crawler(new Client(), new InfluxDb(configuration));
 
+            var timer = new Timer(Callback, ResetEvent, configuration.Interval, configuration.Interval);
+
             while (!CancellationTokenSource.IsCancellationRequested)
             {
-                await Task.Delay(TimeSpan.FromSeconds(configuration.IntervalSeconds), CancellationTokenSource.Token);
-                var result = await crawler.Run(configuration.DeviceList);
+                ResetEvent.WaitOne();
+
+                var result = await crawler.Run(configuration.DeviceList).ConfigureAwait(false);
                 Console.WriteLine(result ? "Crawling was successful!" : "Crawling failed!");
-            }           
+            }
+
+            timer.Dispose();
+        }
+
+        private static void Callback(object state)
+        {
+            ResetEvent.Set();
         }
 
         private static void ProcessExit(object sender, EventArgs e)
