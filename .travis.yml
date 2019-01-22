@@ -5,12 +5,10 @@ services:
   - 'docker'
 
 script:
-  - docker build -t $IMAGE -f Dockerfile.arm32
-  - docker build -t $IMAGE_AMD64 -f Dockerfile.amd64
+  - docker build -t $IMAGE_AMD64 .
 
 after_success:
   - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-  - docker push $IMAGE
   - docker push $IMAGE_AMD64
 
 notifications:
