@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStroem", "MyStroem\MyStroem.csproj", "{863CB05A-990D-4848-833A-1EB1BBB5E15F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{67A0F28B-AC5F-43F3-BE32-2D0C43756D74}"
+ProjectSection(SolutionItems) = preProject
+	Dockerfile = Dockerfile
+	Dockerfile.arm = Dockerfile.arm
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
